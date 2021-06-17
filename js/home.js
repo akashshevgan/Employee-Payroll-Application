@@ -1,4 +1,4 @@
-//UC-6 view details from Local Storage
+
 let empPayrollList
 window.addEventListener('DOMContentLoaded', (event) => {
     empPayrollList = getEmployeePayrollDataFromStorage();
@@ -11,7 +11,6 @@ const getEmployeePayrollDataFromStorage = () => {
                         JSON.parse(localStorage.getItem('EmployeePayrollList')) : [];
 }
 
-/*Template literal ES6 features*/
 const createInnerHtml = () => {
     if (empPayrollList.length ==0) return;
 
